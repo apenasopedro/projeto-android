@@ -11,6 +11,10 @@
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
+@font-face {
+    font-family: 'titulo';
+    src: url('../fontes/Techfont.ttf') format('truetype');
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -28,25 +32,23 @@
     --font-bottom: 'Smooch Sans',Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: rgb(119, 255, 187);
-    
+    background-color: #08012E;
 }
 a.externo::after{
     content: '\1F517\00A0';
 }
 header{
-    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
-    background-color: var(--cor04);
+    background-image: linear-gradient(to bottom, #080166, #0E02B3 );
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
     
 }  
 header > h1{
-    font-family: var(--font-destque);
+    font-family: 'titulo', Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
   
@@ -64,7 +66,7 @@ header > p {
     
 }
 nav{
-    background-color: var(--cor05);
+    background-color: #0E02B3;
     padding: 10px;
     box-shadow: 0px 1px 1px black;
     font-family: var(--font-destque);
@@ -79,8 +81,8 @@ nav > a {
     transition-duration: 0.2s;
 }
 nav > a:hover{
-    background-color: var(--cor03);
-    color: var(--cor05);
+    background-color: white;
+    color: black
 }
 main{
     background-color: white;
@@ -104,9 +106,9 @@ main  p{
 main a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--cor05);
+    color: #005730;
     padding: 2px 6px;
-    background-color:#04965493;
+    
 }
 main a:hover{
     text-decoration: underline;
